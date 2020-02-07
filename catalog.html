@@ -2,13 +2,17 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+
+	<!-- ссылка на подключение css файла -->
+	<link rel="stylesheet" href="css/style.css">
+
     <title>HTML Academy: Нёрдс</title>
 
   </head>
   <body>
 	<header>
 		<a href="index.html">
-			<img src="img/logo.png" alt="Логотип магазина готовых шаблонов «Нёрдс»">
+			<img src="img/svg-nerds/nerds-logo.svg" alt="Логотип магазина готовых шаблонов «Нёрдс»">
 		</a>
 		<nav>
 			<ul>
@@ -18,106 +22,147 @@
 				<li><a href="#">Контакты</a></li>
 			</ul>
 		</nav>
-		<a href="#">Корзина</a>
+		<a class="header_aa" href="#">
+			<img src="img/svg-nerds/cart-icon.svg" alt="">
+		Корзина</a>
 	</header>
 
-	<!-- сайдбар -->
-	<aside>
+	<section class="c_section_zero">
+		<main class="main_c">
+			<h1>Магазин готовых шаблонов</h1>
+			<!-- сайдбар -->
+			<aside>
 
-		<!-- фильтры -->
-		<section>
-			<ul>
-				<h3>Сетка</h3>
-				<li><input name="grid" type="Radio">Адаптивная</li>
-				<li><input name="grid" type="Radio">Фиксированная</li>
-				<li><input name="grid" type="Radio">Резиновая</li>		
-			</ul>
-			<ul>
-				<h3>Особенности</h3>
-				<li><input name="features"  type="checkbox">Слайдер</li>
-				<li><input name="features"  type="checkbox">Блок преимуществ</li>
-				<li><input name="features"  type="checkbox">Новости</li>
-				<li><input name="features"  type="checkbox">Галерея</li>
-				<li><input name="features"  type="checkbox">Корзина</li>
-			</ul>			
-				<button type="button">Показать</button>
+				<!-- фильтры -->
+				<section>
+					<div>
+						<h3>Соимость</h3>
+						<div>
+	         			</div>
+					</div>
 
-		</section>
-	</aside>
+					<ul>
+						<h3>Сетка</h3>
+						<li><input name="grid" type="Radio">Адаптивная</li>
+						<li><input name="grid" type="Radio">Фиксированная</li>
+						<li><input name="grid" type="Radio">Резиновая</li>		
+					</ul>
+					<ul>
+						<h3>Особенности</h3>
+						<li><input name="features"  type="checkbox">Слайдер</li>
+						<li><input name="features"  type="checkbox">Блок преимуществ</li>
+						<li><input name="features"  type="checkbox">Новости</li>
+						<li><input name="features"  type="checkbox">Галерея</li>
+						<li><input name="features"  type="checkbox">Корзина</li>
+					</ul>			
+						<button type="button">Показать</button>
 
+				</section>
+			</aside>
 
-	<main>
-		<h1>Магазин готовых шаблонов</h1>
+			<!-- Файлы -->
+			<section class="c_section__one"> 
 
+				<!-- первая строка -->
+				<ul class="c_section__ul_one">
+					<li class="c_section__ul_li">
+						<div>
+							<img class="" src="img/svg-nerds/browser.svg">
+							<img src="img/catalog/1.jpg" alt="">
+						</div>
+						<div class="c_section__ul_lii_div2">
+							<div class="c_section__ul_lii_div3">
+								<h3>Sedona</h3>
+								<p>Информационный сайт
+								   для туристов</p>
+								<a href="#">9 900 руб</a>	
+							</div>
+						</div>
+					</li>
+					<li class="c_section__ul_lii">
+						<div>
+							<img class="" src="img/svg-nerds/browser.svg">
+							<img class="" src="img/catalog/2.jpg" alt="">
+						</div>
+						<div class="c_section__ul_lii_div3">
+							<h3>Pink app</h3>
+							<p>Продуктовый лендинг
+							   приложения для iOS и Android</p>
+							<a href="#">9 900 руб</a>	
+						</div>
+					</li>				
+				</ul>
 
-		<!-- Файлы -->
-		<section> 
+				<!-- вторая строка -->
+				<ul class="c_section__ul_one">
+					<li class="c_section__ul_li">
+						<div>
+							<img src="img/svg-nerds/browser.svg">
+							<img src="img/catalog/1.jpg" alt="">
+						</div>
+						<div class="c_section__ul_lii_div3">
+							<h3>Sedona</h3>
+							<p>Сайт салоны красоты. 
+							   Для мужчин, да</p>
+							<a href="#">9 900 руб</a>	
+						</div>
+					</li>
+					<li class="c_section__ul_lii">
+						<div>
+							<img src="img/svg-nerds/browser.svg">
+							<img src="img/catalog/2.jpg" alt="">
+						</div>
+						<div class="c_section__ul_lii_div3">
+							<h3>Pink app</h3>
+							<p>Интернет-магазин
+							   вязаных игрушек</p>
+							<a href="#">9 900 руб</a>	
+						</div>
+					</li>			
+				</ul>
 
-			<!-- первая строка -->
-			<ul>
-				<li>
-					<img src="img/catalog/1.jpg" alt="">
-					<h3>Sedona</h3>
-					<p>Информационный сайт </br>
-					   для туристов</p>
-					<a href="#">9 900 руб</a>	
-				</li>
-				<li>
-					<img src="img/catalog/2.jpg" alt="">
-					<h3>Pink app</h3>
-					<p>Продуктовый лендинг </br>
-					   приложения для iOS и Android</p>
-					<a href="#">9 900 руб</a>	
-				</li>				
-			</ul>
+				<!-- третья строка -->
+				<ul class="c_section__ul_one">
+					<li class="c_section__ul_li">
+						<div>
+							<img src="img/svg-nerds/browser.svg">
+							<img src="img/catalog/5.jpg" alt="">
+						</div>
+						<div class="c_section__ul_lii_div3">
+							<h3>A plus</h3>
+							<p>Лендинг курсов повышения 
+							   квалификации</p>
+							<a href="#">9 900 руб</a>			
+						</div>					
+					</li>
+					<li class="c_section__ul_lii">
+						<div>
+							<img src="img/svg-nerds/browser.svg">
+							<img src="img/catalog/6.jpg" alt="">
+						</div>
+						<div class="c_section__ul_lii_div3">
+							<h3>Кваст</h3>
+							<p>Промо-сайт производителя 
+							   крафтового кваса</p>
+							<a href="#">9 900 руб</a>				
+						</div>	
+					</li>
+				</ul>		
+			</section>
 
-			<!-- вторая строка -->
-			<ul>
-				<li>
-					<img src="img/catalog/1.jpg" alt="">
-					<h3>Sedona</h3>
-					<p>Сайт салоны красоты. </br> 
-					   Для мужчин, да</p>
-					<a href="#">9 900 руб</a>	
-				</li>
-				<li>
-					<img src="img/catalog/2.jpg" alt="">
-					<h3>Pink app</h3>
-					<p>Интернет-агазин </br>
-					   вязаных игрушек</p>
-					<a href="#">9 900 руб</a>	
-				</li>			
-			</ul>
+		</main>
+	</section>
 
-			<!-- третья строка -->
-			<ul>
-				<li>
-					<img src="img/catalog/5.jpg" alt="">
-					<h3>A plus</h3>
-					<p>Лендинг курсов повышения </br> </br> 
-					   квалификации</p>
-					<a href="#">9 900 руб</a>								
-				</li>
-				<li>
-					<img src="img/catalog/6.jpg" alt="">
-					<h3>Кваст</h3>
-					<p>Промо-сайт производителя </br> 
-					   крафтового кваса</p>
-					<a href="#">9 900 руб</a>					
-				</li>
-			</ul>		
-		</section>
-		
-	</main>
 	<footer>
 		<ul>
 			<li><a href="#">ВК</a></li>
 			<li><a href="#">ФБ</a></li>
 			<li><a href="#">ИНСТ</a></li>
 		</ul>
-		<p><b>Давайте дружить, это выгодно</b><br>
-		   Скидка 10% для друзей из социальных сетей.
-		</p>
+		<div>
+			<h3>Давайте дружить, это выгодно!</h3>
+			<p>Скидка 10% для друзей из социальных сетей.</p>
+		</div>
 	</footer>
 
   </body>
