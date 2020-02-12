@@ -16,7 +16,7 @@
 			<a href="#">Контакты</a>
 		</nav>
 		<div>
-			<img src="img/icons/cart-icon.svg" alt="Кнопка для открытия корзины">
+			<img src="img/icons/cart-icon.svg" alt="Корзина">
 			<a href="#">Корзина</a>
 		</div>		
 	</header>
@@ -48,17 +48,22 @@
 			</ul>
 
 			<div>
-				<form action="#" >
+				<!-- в action вписать адрес на который будет поступать информация в форме после нажатия на кнпку "отправить" -->
+				<form action="https://echo.htmlacademy.ru" >
 				    <h2>Напишите нам</h2>
 				    <button type="button" class="btn cancel" onclick="closeForm()">Закрыть</button>
-				    <div>
-					    <label for="name"><b>Ваше имя:</b></label>
-					    <input type="text" placeholder="Имя Фамилия" name="name" required>
-					    <label for="email"><b>Ваш e-mail:</b></label>
-					    <input type="text" placeholder="email@example.com" name="email" required>
-					</div>
-				    <label for="name"><b>Текст вашего письма:</b></label>
-				    <textarea name="comment" placeholder="В свободной форме" cols="40" rows="10"></textarea>
+				    <p>
+					    <label for="name">Ваше имя:</label>
+					    <input id="name" type="text" placeholder="Имя Фамилия" name="name" required>
+					</p>
+				    <p>
+					    <label for="e-mail">Ваш e-mail:</label>
+					    <input id="e-mail" type="text" placeholder="email@example.com" name="e-mail" required>
+					</p>
+				    <p>
+					    <label for="text_mail">Текст вашего письма:</label>
+					    <textarea id="text_mail" name="comment" placeholder="В свободной форме" cols="40" rows="10"></textarea>
+					</p>
 				    <button type="submit" class="btn">Отправить</button>
 				  </form>
 			</div>
