@@ -2,6 +2,16 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+
+	<!-- ссылка на подключение CSS файла -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- ссылка на подключение CSS файла -->
+	<link rel="stylesheet" href="css/normalize.css">
+
+	<!-- ссылка на шрифт -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+
 	<title>Document</title>
 </head>
 <body>
@@ -22,7 +32,7 @@
 	</header>
 
 	<main>
-		<section>
+		<section class="advantages">
 			<ul>
 				<li>
 					<img src="img/advantages/1.jpg" alt="Мы создаем веб-Сайты">
@@ -46,42 +56,47 @@
 					<a href="#">Заказать</a>
 				</li>
 			</ul>
-
-			<div>
-				<!-- в action вписать адрес на который будет поступать информация в форме после нажатия на кнпку "отправить" -->
-				<form action="https://echo.htmlacademy.ru" >
-				    <h2>Напишите нам</h2>
-				    <button type="button" class="btn cancel" onclick="closeForm()">Закрыть</button>
-				    <div>
-					    <label for="name">Ваше имя:</label>
-					    <input id="name" type="text" placeholder="Имя Фамилия" name="name" required>
-					</div>
-				    <div>
-					    <label for="email">Ваш e-mail:</label>
-					    <input id="email" type="text" placeholder="email@example.com" name="e-mail" required>
-					</div>
-				    <div>
-					    <label for="text_mail">Текст вашего письма:</label>
-					    <textarea id="text_mail" name="comment" placeholder="В свободной форме" cols="40" rows="10"></textarea>
-					</div>
-				    <button type="submit" class="btn">Отправить</button>
-				  </form>
-			</div>
 		</section>
 		
 	</main>
 
 	<footer>
-		<ul>
-			<a href="#">
-				<img src="img/icons/social/vk-icon.svg" alt="Ссылка на группу магазина Нёрдс в Вконткте">
-			</a>
-			<a href="#">
-				<img src="img/icons/social/fb-icon.svg" alt="Ссылка на группу магазина Нёрдс в FaceBook">
-			</a>
-			<a href="#">
-				<img src="img/icons/social/insta-icon.svg" alt="Ссылка на страницу магазина Нёрдс в Instagram">
-			</a>
+		<div class="feedback">
+			<!-- в action вписать адрес на который будет поступать информация в форме после нажатия на кнпку "отправить" -->
+			<form action="https://echo.htmlacademy.ru" >
+			    <h2>Напишите нам</h2>
+			    <button type="button" class="btn cancel" onclick="closeForm()">Закрыть</button>
+			    <div>
+				    <label for="name">Ваше имя:</label>
+				    <input id="name" type="text" placeholder="Имя Фамилия" name="name" required>
+				</div>
+			    <div>
+				    <label for="email">Ваш e-mail:</label>
+				    <input id="email" type="text" placeholder="email@example.com" name="e-mail" required>
+				</div>
+			    <div>
+				    <label for="text_mail">Текст вашего письма:</label>
+				    <textarea id="text_mail" name="comment" placeholder="В свободной форме" cols="40" rows="10"></textarea>
+				</div>
+			    <button type="submit" class="btn">Отправить</button>
+			  </form>
+		</div>
+		<ul class="social">
+			<li>
+				<a href="#">
+					<img src="img/icons/social/vk-icon.svg" alt="Ссылка на группу магазина Нёрдс в Вконткте">
+				</a>
+			</li>			
+			<li>
+				<a href="#">
+					<img src="img/icons/social/fb-icon.svg" alt="Ссылка на группу магазина Нёрдс в FaceBook">
+				</a>
+			</li>			
+			<li>
+				<a href="#">
+					<img src="img/icons/social/insta-icon.svg" alt="Ссылка на страницу магазина Нёрдс в Instagram">
+				</a>
+			</li>
 		</ul>
 		<div>
 			<h3>Давайте дружить, это выгодно!</h3>
