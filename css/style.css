@@ -39,7 +39,7 @@ footer h3{
 	background: #E84044;
 }
 
-.social img{
+.social svg{
     position: absolute;
     margin: auto;
     left: 0;
@@ -51,6 +51,12 @@ footer h3{
 .social li:active{
     background: #D83438;
 }
+
+.social li:active svg{
+    opacity: 0.4;
+}
+
+
 
 footer p{
     color: #444444;
