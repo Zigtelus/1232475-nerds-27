@@ -5,72 +5,21 @@ body{
 	color: #000000;
 }
 
-header{
+/*header*/
+.header{
 	background: #eeeeee;
 	font-size: 16px;
 	text-transform: uppercase;
 }
 
-.feedback{
-	display: none;	
-}
-
-footer h3{
-	font-size: 36px;
-}
-
-.social li{
-	width: 70px;
-	height: 70px;
-	background-color: #eeeeee;
-	border-radius: 50%;
-}
-
-.social a{
-	display: block; /* Ссылка как блочный элемент */
-    text-align: center; /* Выравнивание по центру */
-    height: 100%; /* Высота на весь слой */
-    color: #666;
-	border-radius: 50%;
-    position: relative;
-}
-
-.social li:hover{
-	background: #E84044;
-}
-
-.social svg{
-    position: absolute;
-    margin: auto;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-}
-
-.social li:active{
-    background: #D83438;
-}
-
-.social li:active svg{
-    opacity: 0.4;
-}
-
-
-
-footer p{
-    color: #444444;
-}
-
-
 
 /*index*/
-.advantages h3{
+.advantages_title{
 	text-transform: uppercase;
 	font-size: 24px;
 }
 
-.advantages p{
+.advantages_sup_title{
 	font-size: 16px;
 	color: #283136;
 	line-height: 1.5;
@@ -85,7 +34,7 @@ footer p{
 
 
 /*catalog*/
-.white_back{
+.card_link{
 	display: none;
 }
 
@@ -93,13 +42,67 @@ footer p{
 	background: #eeeeee;
 }
 
-aside fieldset{
+.grid_block,
+.features_block{
 	color: #283136;
 }
 
-aside legend{
+.grid_title,
+.features_title{
 	text-transform: uppercase;
 	font-weight: bold;
 	font-size: 18px;
 	color: #000000;
+}
+
+
+
+/*footer*/
+.footer_feedback{
+	display: none;	
+}
+
+.footer_title{
+	font-size: 36px;
+}
+
+.footer_social li{
+	width: 70px;
+	height: 70px;
+	background-color: #eeeeee;
+	border-radius: 50%;
+}
+
+.footer_social a{
+	display: block; /* Ссылка как блочный элемент */
+    text-align: center; /* Выравнивание по центру */
+    height: 100%; /* Высота на весь слой */
+    color: #666;
+	border-radius: 50%;
+    position: relative;
+}
+
+.footer_social li:hover{
+	background: #E84044;
+}
+
+.footer_social svg{
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.footer_social li:active{
+    background: #D83438;
+}
+
+.footer_social li:active svg{
+    opacity: 0.4;
+}
+
+.footer p{
+    color: #444444;
 }
