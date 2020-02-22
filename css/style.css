@@ -32,7 +32,7 @@ h1, h2, h3, h4{
 	font-family: Roboto;
 }
 
-.header, .nav, .slide--one, .partners, .social--icons, .about, .advantages, .statistics--percent{
+.nav, .slide--one, .partners, .social--icons, .about, .advantages, .statistics--percent{
 	display: flex;
 	justify-content: space-between;
 }
@@ -41,6 +41,10 @@ h1, h2, h3, h4{
 	max-width: 1160px;
 	width: 100%;
 	margin: 0 auto;
+}
+
+.logo--link, .nav, .basket{
+	float: left;
 }
 
 /*list*/
@@ -187,7 +191,12 @@ h1, h2, h3, h4{
 }
 
 /*header*/
+.header {
+	bottom: 0;
+}
+
 .header-block{
+	height: 65px;
 	padding: 49px 0 0 0;
 }
 
@@ -195,7 +204,13 @@ header, .slider{
 	background: #eeeeee;
 }
 
-.nav, .basket {
+.nav {
+	font-weight: 500;
+    margin: 31px 198px 0px 202px;
+    height: 30px;
+}
+
+.basket {
 	font-weight: 500;
     margin-top: 31px;
     height: 30px;
