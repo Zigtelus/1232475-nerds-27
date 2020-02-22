@@ -84,6 +84,7 @@ h1, h2, h3, h4{
 
 .basket a {
 	margin-left: 26px;
+	float: right;
 }
 
 .nav--open--link{
@@ -206,17 +207,22 @@ header, .slider{
 
 .nav {
 	font-weight: 500;
-    margin: 31px 198px 0px 202px;
+    margin: 32px 0 0px 202px;
     height: 30px;
+    width: 435px;
 }
 
 .basket {
 	font-weight: 500;
     margin-top: 31px;
     height: 30px;
+    min-width: 125px;
+    float: right;
 }
 
-
+.basket img{
+	margin-left: 10px;
+}
 
 
 
