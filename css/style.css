@@ -13,7 +13,7 @@ body{
 	min-width: 1440px;
 }
 
-.background{
+.background, header, .slider{
 	background: #eeeeee;
 }
 
@@ -32,19 +32,37 @@ h1, h2, h3, h4{
 	font-family: Roboto;
 }
 
-.nav, .slide--one, .partners, .social--icons, .about, .advantages, .statistics--percent{
+.nav, .slide--one, .slide--two, .slide--three, .partners, .social--icons, .about, .advantages, .statistics--percent, .main--main, .pattern--cube{
 	display: flex;
 	justify-content: space-between;
 }
 
+/*container*/
 .container{
 	max-width: 1160px;
 	width: 100%;
 	margin: 0 auto;
 }
 
-.logo--link, .nav, .basket{
-	float: left;
+.header {
+	bottom: 0;
+}
+
+.header-block{
+	height: 65px;
+	padding: 49px 0 0 0;
+}
+
+.main--main{
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-end;
+	width: 100%;
+}
+
+.where{
+	padding: 54px 0;
+    position: relative;
 }
 
 /*list*/
@@ -53,20 +71,38 @@ h1, h2, h3, h4{
 	padding: 0;
 }
 
-/*paragraph*/
-.paragraph{
-	color: #283136;
-	font-size: 16px;
-	font-family: Roboto;
-	line-height: 1.5;
-	margin: 0;
+.social--icons li:active{
+    background: #D83438;
 }
 
-.advantages--suptitle{
-	width: 245px;
+.social--icons li:active svg{
+    opacity: 0.4;
+}
+
+.social--icons li {
+	width: 79px;
+	height: 79px;
+	background-color: #e1e1e1;
+	border-radius: 50%;
+	margin-right: 12px;
+}
+
+.social--icons li:hover{
+	background: #E84044;
+}
+
+.about--information li {
+    position: relative;
+    line-height: 24px;
+    margin-top: 20px;
+    margin-left: 36px;
 }
 
 /*link*/
+
+.logo--link, .nav, .basket{
+	float: left;
+}
 
 .nav a, .basket a{
 	color: #000;
@@ -76,6 +112,15 @@ h1, h2, h3, h4{
 
 	top: 83px;
     height: 30px;
+}
+
+.social--icons a{
+	display: block; /* Ссылка как блочный элемент */
+    text-align: center; /* Выравнивание по центру */
+    height: 100%; /* Высота на весь слой */
+    color: #666;
+	border-radius: 50%;
+    position: relative;
 }
 
 .nav a {
@@ -91,6 +136,46 @@ h1, h2, h3, h4{
 	border-bottom: 2px solid #fb565a;
 }
 
+.header--link:hover {
+	color: #fb565a;
+}
+
+.header--link:active {
+	opacity: 0.3;
+}
+
+.button--grey a{
+	padding: 19px 23px 19px 23px;
+    background: #eee;
+    text-decoration: none;
+    color: #000;
+    margin-right: 11px;  
+    font-weight: 500;
+}
+
+.button--grey--cube a{
+	padding: 19px 23px 19px 23px;
+    background: #eee;
+    text-decoration: none;
+    color: #000;
+    margin-right: 11px;  
+    font-weight: 500;
+}
+
+.button--grey--cube a:hover{
+    background: #dfdfdf;
+}
+
+.button--grey--cube--actove a{
+	padding: 16px 20px 16px 20px;
+    background: #fff;
+    text-decoration: none;
+    color: #000;
+	border:  solid 3px #dbdbdb;
+    font-weight: 500;
+}
+
+/*img*/
 .logo--link img{
 	opacity: 1;
 }
@@ -100,14 +185,6 @@ h1, h2, h3, h4{
 
 .logo--link img:active{
 	opacity: .60;
-}
-
-.header--link:hover {
-	color: #fb565a;
-}
-
-.header--link:active {
-	opacity: 0.3;
 }
 
 .partners--link img {
@@ -122,6 +199,35 @@ h1, h2, h3, h4{
 	opacity: .1;
 }
 
+.basket img{
+	margin-left: 10px;
+}
+
+.about--statistics--img{
+	margin: 0 0 49px 0;
+}
+
+.products--pattern--right:hover .pattern--img--head {
+	opacity: 1;
+}
+
+.products--pattern:hover .pattern--price {
+	opacity: 1;
+	display: block;
+}
+
+.products--pattern:hover .pattern--img--head {
+	opacity: 1;
+}
+
+.pattern--img--head{
+	opacity: .12;    
+	float: left;
+}
+
+.slider--img img{
+	height: 100%;
+}
 
 /*buttun*/
 .button{
@@ -138,6 +244,8 @@ h1, h2, h3, h4{
 	background: #fb565a;
 	padding: 19px 55px;	
 	margin: 42px 0;
+    bottom: 80px;
+    position: absolute;
 }
 
 .button--red{
@@ -158,6 +266,20 @@ h1, h2, h3, h4{
 	margin-top: 35px;
 }
 
+.button--grey--cube--actove {
+    margin-right: 15px;
+}
+
+.button--price{
+	width: 200px;
+}
+
+.sort button{
+    opacity: 0.3;
+    background: none;
+    border: none;
+}
+
 .button:hover{
 	opacity: 0.95;
 }
@@ -165,13 +287,6 @@ h1, h2, h3, h4{
 .button:active{
 	color: rgba(255, 255, 255, 0.3);
 	opacity: 1;
-}
-
-.sort button{
-	border:none;
-    background:none;
-    margin: 0 13px;
-    opacity: 0.3;
 }
 
 .sort button:hover{
@@ -182,28 +297,103 @@ h1, h2, h3, h4{
 	opacity: 1;
 }
 
-.test :visited{
-	color: black;
+.feedback--close--button {
+	background: url("../img/icons/close-cross.png");
+	background-repeat: no-repeat;
+	border: none;
+	width: 21px;
+	height: 21px;
+	opacity: 0.2;
 }
 
-/*Заголовки*/
+.feedback--close--button:hover {
+	opacity: 1;
+}
+
+.feedback--close--button:active {
+	opacity: .1;
+}
+
+/*title*/
 .catalog--title h1{
 	font-size: 55px;
+	font-weight: 500;
+}
+
+.slider--text--title{
+	font-size: 55px;
+	font-weight: 500;
+
+	margin-bottom: 28px;
+	line-height: 1;
+}
+
+.advantages--title{
+	text-transform: uppercase;
+	margin: 26px 0;
+}
+
+.about--information-title{
+	margin-bottom: 35px;
+
+	font-family: Roboto;
+ 	font-size: 45px;
+    font-weight: 500;
+}
+
+.about--wedo--title, .about--statistics--title, .price--title, .sort button{
+	text-transform: uppercase;
+}
+
+.about--statistics--title{
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin: 41px 0 0 0;
+}
+
+.feedback--adress--title{
+	font-size: 18px;
+	margin-bottom: 32px;
+}
+
+.footer--title{
+	font-size: 36px;
+	margin-bottom: 12px;
+}
+
+.catalog--title{
+	margin: 0 216px;
+}
+
+
+/*paragraph*/
+.paragraph{
+	color: #283136;
+	font-size: 16px;
+	font-family: Roboto;
+	line-height: 1.5;
+	margin: 0;
+}
+
+.advantages--suptitle{
+	width: 245px;
+}
+
+.feedback--adress--suptitle{
+	color: #666666;
+}
+
+.about--information--suptitle{
+	margin-bottom: 47px;
+}
+
+.statistics--percent p{
+	margin: 27px 0 0 0;
 }
 
 /*header*/
-.header {
-	bottom: 0;
-}
-
-.header-block{
-	height: 65px;
-	padding: 49px 0 0 0;
-}
-
-header, .slider{	
-	background: #eeeeee;
-}
 
 .nav {
 	font-weight: 500;
@@ -220,30 +410,17 @@ header, .slider{
     float: right;
 }
 
-.basket img{
-	margin-left: 10px;
-}
-
-
-
 
 /*Первый блок*/
 .slider--all{
 	position: relative;
 	padding: 36px 0 0 0;
+	height: 430px;
 }
 
 .slider--text{
 	margin: 30px 0;
-	width: 390px;
-}
-
-.slider--text--title{
-	font-size: 55px;
-	font-weight: 500;
-
-	margin-bottom: 28px;
-	line-height: 1;
+	width: 462px;
 }
 .next--slide{
 	right: 505px;
@@ -258,11 +435,6 @@ header, .slider{
 	margin: 0;
 }
 
-.advantages--title{
-	text-transform: uppercase;
-	margin: 26px 0;
-}
-
 
 /*трейти блок*/
 .about{
@@ -272,25 +444,6 @@ header, .slider{
 .about--information{
 	width: 650px;	
     margin: 40px 0 0 0;
-}
-
-.about--information-title{
-	margin-bottom: 35px;
-
-	font-family: Roboto;
- 	font-size: 45px;
-    font-weight: 500;
-}
-
-.about--information--suptitle{
-	margin-bottom: 47px;
-}
-
-.about--information li {
-    position: relative;
-    line-height: 24px;
-    margin-top: 20px;
-    margin-left: 36px;
 }
 
 
@@ -305,24 +458,8 @@ header, .slider{
     position: absolute;
 }
 
-.about--wedo--title, .about--statistics--title{
-	text-transform: uppercase;
-}
-
 .about--statistics{
 	width: 360px;
-}
-
-.about--statistics--title{
-  font-family: Roboto;
-  font-size: 16px;
-  font-weight: bold;
-  text-align: center;
-  margin: 41px 0 0 0;
-}
-
-.about--statistics--img{
-	margin: 0 0 49px 0;
 }
 
 .statistics--percent--numbers { 
@@ -333,11 +470,6 @@ header, .slider{
 .statistics--percent b{
 	font-size: 45px;
 	font-family: Roboto;
-}
-
-
-.statistics--percent p{
-	margin: 27px 0 0 0;
 }
 
 
@@ -376,23 +508,47 @@ header, .slider{
     background: #fff;
 }
 
-.feedback--adress--title{
-	font-size: 18px;
-	margin-bottom: 32px;
-}
-
-.feedback--adress--suptitle{
-	color: #666666;
-}
-
-.feedback--adress  .button--red {
-	padding: 19px 33px;
-}
-
 .feedback--form{
-	position: absolute;
-    top: 58px;
-    left: 500px;
+    position: fixed;
+    top: 15px;
+    left: 253px;
+    width: 760px;
+    height: 433px;
+    background: #fff;
+    flex-wrap: wrap;
+    padding: 73px 100px 84px 100px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
+    z-index: 1;
+}
+
+
+
+.feedback--form--text {
+	margin-top: 36px;
+}
+
+.feedback--form--text textarea {
+	border: 1px solid #d7dcde;
+	width: 744px;
+    height: 118px;
+    margin-top: 12px;
+    padding: 14px 0 0 16px;	
+    resize: none;
+}
+
+.feedback--form--name, .feedback--form--email{
+	width: 360px;
+	height: 82px;
+}
+
+.feedback--title{
+	width: 50%;
+    height: 65px;
+}
+
+.none{
     display: none;
 }
 
@@ -403,11 +559,6 @@ header, .slider{
     background-size: cover;
 	margin: 80px 0 0 0;
 }
-
-.where{
-	padding: 54px 0;
-}
-
 
 .footer--social{
     height: 81px;
@@ -420,27 +571,6 @@ header, .slider{
 	padding: 0;
 }
 
-.social--icons li {
-	width: 79px;
-	height: 79px;
-	background-color: #eeeeee;
-	border-radius: 50%;
-	margin-right: 12px;
-}
-
-.social--icons a{
-	display: block; /* Ссылка как блочный элемент */
-    text-align: center; /* Выравнивание по центру */
-    height: 100%; /* Высота на весь слой */
-    color: #666;
-	border-radius: 50%;
-    position: relative;
-}
-
-.social--icons li:hover{
-	background: #E84044;
-}
-
 .social--icons svg{
     position: absolute;
     margin: auto;
@@ -450,18 +580,204 @@ header, .slider{
     right: 0;
 }
 
-.social--icons li:active{
-    background: #D83438;
+/*legend*/
+.grid--title{
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: bold;
+	width: 260px;
 }
 
-.social--icons li:active svg{
+.cost--title {
+	padding: 60px 0 54px 0;
+}
+
+
+/*input*/
+
+
+
+
+
+
+
+.grid--block input{
+    min-width: 127px;
+    width: 127px;
+}
+
+fieldset {
+	border: none;
+}
+
+.grid--block li {
+    line-height: 40px;
+	margin-left: 30px;
+}
+
+
+/*radio*/
+.radio {
+	cursor: pointer;
+}
+
+.grid--radio, .sort--radio, .sort--radio--at {
+	display: none;
+}
+
+.grid--radio:checked + .grid--label::before{
+	content: "";
+	background: url("../img/icons/radio-on.png");
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	left: -36px;
+	bottom: -2px;
+	opacity: .4;
+}
+
+.grid--radio:hover + .grid--label::before{
+	opacity: 1;
+}
+
+.sort--radio:checked + .sort--label::before, .sort--radio--at:checked + .sort--label--at::before {
+    opacity: 1;
+}
+
+ .sort--radio:hover + .sort--label::before, .sort--radio--at:hover + .sort--label--at::before{
     opacity: 0.4;
 }
 
-/*footer text*/
-.footer--title{
-	font-size: 36px;
-	margin-bottom: 12px;
+
+/*text*/
+
+.feedback--form--name input, .feedback--form--email input{
+	width: 344px;
+	border: 1px solid #d7dcde;
+    height: 50px;
+    margin-top: 12px;
+    padding-left: 16px;
+}
+
+.feedback--form--name input:hover, .feedback--form--email input:hover, .feedback--form--text textarea:hover{
+	border: 1px solid #b4b9bb;
+}
+
+.feedback--form--name input:focus, .feedback--form--email input:focus, .feedback--form--text textarea:focus{
+	border: 1px solid #000;
+}
+
+
+
+
+/*checkbox*/
+.grid--block [type="checkbox"]{
+	display: none;
+}
+
+.grid--checkbox:checked + .features--label::before{
+	content: "";
+	background: url("../img/icons/checkbox-on.png");
+	display: inline-block;
+	width: 27px;
+	height: 23px;
+	left: -36px;
+	bottom: -1px;
+	opacity: .4;
+}
+
+.grid--checkbox:hover + .features--label::before{
+	opacity: 1;
+}
+
+/*label*/
+.grid--label::before {
+	content: "";
+	background: url("../img/icons/radio-off.png");
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	left: -36px;
+	position: absolute;
+	bottom: -2px;
+	opacity: .4;
+}
+
+.grid--label{
+	position: relative;
+	left: 6px;
+}
+
+.features--label::before {
+	content: "";
+	background: url("../img/icons/checkbox-off.png");
+	display: inline-block;
+	width: 23px;
+	height: 23px;
+	left: -36px;
+	position: absolute;
+	bottom: -1px;
+	opacity: .4;
+}
+
+.features--label{
+	position: relative;
+	left: 6px;
+}
+
+.sort--label::before{
+	content: "";
+    background: url("../img/icons/icon-down-dir.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 11px;
+    height: 10px;
+    padding-bottom: 0px;
+    opacity: .2;
+}
+
+.sort--label--at::before {
+	content: "";
+    background: url("../img/icons/icon-down-dir.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 11px;
+    height: 10px;
+    padding-bottom: 0px;
+    opacity: .2;
+    transform: scaleY(-1);
+}
+
+
+/*form*/
+.sort{    
+	width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 60px 0;
+}
+
+.sliders{
+	display: flex;
+	width: 100%;
+    height: 100%;
+}
+
+.slide--one{
+	width: 100%;
+}
+
+.send {
+	width: 260px;
+}
+
+.aside fieldset {
+	width: 261px;
+}
+
+.cost--slider {
+    background: #eeeeee;
+    padding: 21px;
 }
 
 
@@ -471,10 +787,6 @@ header, .slider{
 	background: #eeeeee;
 }
 
-.catalog--title{
-	margin: 0 216px;
-}
-
 .products{
 	width: 760px;
 	display: flex;
@@ -482,24 +794,32 @@ header, .slider{
 	align-content: flex-end;
 }
 
+.aside{
+	width: 261px;
+
+}
+
+.pattern--price{
+	display: none;
+	position: absolute;
+    bottom: 0;
+    padding: 35px 80px 43px 80px;
+    background: #eeeeee;
+	opacity: .12;
+}
+
 .products--pattern, .products--pattern--right{
 	width: 360px;
 	height: 616px;
+	position: relative;
+	margin-bottom: 33px;
 }
 
 .products--pattern--right{
 	margin-left: 40px;
 }
 
-.main--main{
-	display: flex;
-	flex-wrap: wrap;
-	align-content: flex-end;
-	width: 100%;
-
-}
-
-.aside{
-	width: 261px;
-
+.products--pattern--right:hover .pattern--price {
+	opacity: 1;
+	display: block;
 }
