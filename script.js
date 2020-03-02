@@ -1,6 +1,6 @@
 
 				let link = document.querySelector(".link"); 
-				let popup = document.querySelector(".feedback--form"); 
+				let popup = document.querySelector(".feedback--form");
 				let close = document.querySelector(".close");
 
 				if (link) {
@@ -21,41 +21,55 @@
 
 
 
-				let slideOne = document.querySelector(".slide--one--input");
-				let slideTwo = document.querySelector(".slide--two--input");
-				let slideThree = document.querySelector(".slide--three--input");
+				let slideOne = document.querySelector(".slide-one-button");
+				let slideTwo = document.querySelector(".slide-two-button");
+				let slideThree = document.querySelector(".slide-three-button");
 
+				let slideOneNext = document.querySelector(".slide-one");
+				let slideTwoNext = document.querySelector(".slide-two");
+				let slideThreeNext = document.querySelector(".slide-three");
 
-				let slideOneSmena = document.querySelector(".slide--one");
-				let slideTwoSmena = document.querySelector(".slide--two");
-				let slideThreeSmena = document.querySelector(".slide--three");
+				let slideActive = document.querySelector(".slide-active");
 
 
 				if (slideOne) {
 					slideOne.addEventListener("click", function (evt) {
 					evt.preventDefault();
 
-					slideOneSmena.classList.remove("none");	
-					slideTwoSmena.classList.add("none");	
-					slideThreeSmena.classList.add("none");
+					slideOneNext.classList.remove("none");
+					slideTwoNext.classList.add("none");
+					slideThreeNext.classList.add("none");
+
+					slideTwo.classList.remove("slide-active");
+					slideThree.classList.remove("slide-active");
+					slideOne.classList.add("slide-active");
+
 				});}
 
 				if (slideTwo) {
 					slideTwo.addEventListener("click", function (evt) {
 					evt.preventDefault();
-						console.log("должен подгрузился второй слайд");					
-					slideTwoSmena.classList.remove("none");	
-					slideOneSmena.classList.add("none");	
-					slideThreeSmena.classList.add("none");
+						console.log("должен подгрузился второй слайд");
+					slideTwoNext.classList.remove("none");
+					slideOneNext.classList.add("none");
+					slideThreeNext.classList.add("none");
+
+					slideOne.classList.remove("slide-active");
+					slideThree.classList.remove("slide-active");
+					slideTwo.classList.add("slide-active");
 				});}
 
 				if (slideThree) {
 					slideThree.addEventListener("click", function (evt) {
 					evt.preventDefault();
-						console.log("должен подгрузился третий слайд");						
-					slideThreeSmena.classList.remove("none");	
-					slideOneSmena.classList.add("none");	
-					slideTwoSmena.classList.add("none");
+						console.log("должен подгрузился третий слайд");
+					slideThreeNext.classList.remove("none");
+					slideOneNext.classList.add("none");
+					slideTwoNext.classList.add("none");
+
+					slideTwo.classList.remove("slide-active");
+					slideOne.classList.remove("slide-active");
+					slideThree.classList.add("slide-active");
 				});}
 
 
@@ -65,6 +79,7 @@
 
 
 				let cobeActive = document.querySelector(".button--grey--cube--active");
+				
 				if (cobeOneActive) {
 					cobeOneActive.addEventListener("click", function (evt) {
 						
@@ -77,7 +92,7 @@
 				if (cobeTwoActive) {
 					cobeTwoActive.addEventListener("click", function (evt) {
 					
-					cobeTwoActive.classList.add("button--grey--cube--active");					
+					cobeTwoActive.classList.add("button--grey--cube--active");
 					cobeOneActive.classList.remove("button--grey--cube--active");
 					cobeThreeActive.classList.remove("button--grey--cube--active");
 				});}
@@ -85,7 +100,7 @@
 				if (cobeThreeActive) {
 					cobeThreeActive.addEventListener("click", function (evt) {
 
-					cobeThreeActive.classList.add("button--grey--cube--active");					
+					cobeThreeActive.classList.add("button--grey--cube--active");
 					cobeTwoActive.classList.remove("button--grey--cube--active");
 					cobeOneActive.classList.remove("button--grey--cube--active");
 				});}
