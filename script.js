@@ -1,6 +1,6 @@
 
 				let link = document.querySelector(".link"); 
-				let popup = document.querySelector(".feedback--form");
+				let popup = document.querySelector(".feedback-form");
 				let close = document.querySelector(".close");
 
 				if (link) {
@@ -73,34 +73,34 @@
 				});}
 
 
-				let cobeOneActive = document.querySelector(".button--grey--cube--one");
-				let cobeTwoActive = document.querySelector(".button--grey--cube--two");
-				let cobeThreeActive = document.querySelector(".button--grey--cube--three");
+				let cobeOneActive = document.querySelector(".button-grey-cube-one");
+				let cobeTwoActive = document.querySelector(".button-grey-cube-two");
+				let cobeThreeActive = document.querySelector(".button-grey-cube-three");
 
 
-				let cobeActive = document.querySelector(".button--grey--cube--active");
+				let cobeActive = document.querySelector(".button-grey-cube-active");
 				
 				if (cobeOneActive) {
 					cobeOneActive.addEventListener("click", function (evt) {
 						
-					cobeOneActive.classList.add("button--grey--cube--active");
-					cobeTwoActive.classList.remove("button--grey--cube--active");
-					cobeThreeActive.classList.remove("button--grey--cube--active");
+					cobeOneActive.classList.add("button-grey-cube-active");
+					cobeTwoActive.classList.remove("button-grey-cube-active");
+					cobeThreeActive.classList.remove("button-grey-cube-active");
 				
 				});}
 
 				if (cobeTwoActive) {
 					cobeTwoActive.addEventListener("click", function (evt) {
 					
-					cobeTwoActive.classList.add("button--grey--cube--active");
-					cobeOneActive.classList.remove("button--grey--cube--active");
-					cobeThreeActive.classList.remove("button--grey--cube--active");
+					cobeTwoActive.classList.add("button-grey-cube-active");
+					cobeOneActive.classList.remove("button-grey-cube-active");
+					cobeThreeActive.classList.remove("button-grey-cube-active");
 				});}
 
 				if (cobeThreeActive) {
 					cobeThreeActive.addEventListener("click", function (evt) {
 
-					cobeThreeActive.classList.add("button--grey--cube--active");
-					cobeTwoActive.classList.remove("button--grey--cube--active");
-					cobeOneActive.classList.remove("button--grey--cube--active");
+					cobeThreeActive.classList.add("button-grey-cube-active");
+					cobeTwoActive.classList.remove("button-grey-cube-active");
+					cobeOneActive.classList.remove("button-grey-cube-active");
 				});}
