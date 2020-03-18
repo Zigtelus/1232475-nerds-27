@@ -78,8 +78,6 @@
 				let cobeThreeActive = document.querySelector(".button-grey-cube-three");
 
 
-				let cobeActive = document.querySelector(".button-grey-cube-active");
-				
 				if (cobeOneActive) {
 					cobeOneActive.addEventListener("click", function (evt) {
 						

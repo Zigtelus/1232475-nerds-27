@@ -3,16 +3,16 @@
 <head>
 	<meta charset="UTF-8">
 
+	<!-- ссылка на шрифт -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap&subset=cyrillic" rel="stylesheet">
+
+	<title>Document</title>
+
 	<!-- ссылка на подключение CSS файла -->
 	<link rel="stylesheet" href="css/normalize.css">
 
 	<!-- ссылка на подключение CSS файла -->
 	<link rel="stylesheet" href="css/style.css">
-
-	<!-- ссылка на шрифт -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap&subset=cyrillic" rel="stylesheet">
-
-	<title>Document</title>
 </head>
 
 <body>
@@ -51,15 +51,16 @@
 						</div>
 						<div class="block-cost-mam">
 							<p>
-								<label class="label" for="">От</label>
-								<input class="input" type="text">
+								<label class="label" for="on">От</label>
+								<input class="input" id="on" name="От" type="text">
 							</p>
 							<p>
-								<label class="label" for="">До</label>
-								<input class="input" type="text">
+								<label class="label" for="off">До</label>
+								<input class="input" id="off" name="До" type="text">
 							</p>
 						</div>
 					</fieldset>
+
 					<fieldset class="grid-block">
 						<legend class="grid-title">Сетка:</legend>
 						<ul class="grid-unordered-list">
@@ -113,20 +114,20 @@
 				</form>
 			</aside>
 			<div>
-				<form class="sort" action="" method="get">
-					<legend class="grid-title">Сортировка:</legend>
-					<ul>
-						<li class="list sort-list">
+				<div class="sort">
+					<b class="grid-title">Сортировать:</b>
+					<div>
+						<div class="sort-list">
 							<a class="sort-link sort-link-active" href="#">По цене</a>
 							<a class="sort-link" href="#">по типу</a>
 							<a class="sort-link" href="#">по названию</a>
-						</li>
-						<li class="list sort-arrow">
+						</div>
+						<div class="sort-arrow">
 							<img class="sort-arrow-down sort-arrow-active" src="img/icons/icon-down-dir.png" alt="">
 							<img class="sort-arrow-up" src="img/icons/icon-down-dir.png" alt="">
-						</li>
-					</ul>
-				</form>
+						</div>
+					</div>
+				</div>
 				<ul class="unordered-list products">
 					<li class="list products-pattern">
 						<div class="pattern-price">
