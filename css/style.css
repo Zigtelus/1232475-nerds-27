@@ -475,8 +475,9 @@ body {
 }
 
 .partners-list {
-	width: 261px;
+	width: 222px;
 	text-align-last: center;
+	/*margin-right: 37px;*/
 }
 
 .partners-list-border::after {

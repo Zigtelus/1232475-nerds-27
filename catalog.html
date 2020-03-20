@@ -52,11 +52,11 @@
 						<div class="block-cost-mam">
 							<p>
 								<label class="label" for="on">От</label>
-								<input class="input" id="on" name="От" type="text">
+								<input class="input" id="on" name="От" value="0" type="text">
 							</p>
 							<p>
 								<label class="label" for="off">До</label>
-								<input class="input" id="off" name="До" type="text">
+								<input class="input" id="off" name="До" value="15 000" type="text">
 							</p>
 						</div>
 					</fieldset>
@@ -65,7 +65,7 @@
 						<legend class="grid-title">Сетка:</legend>
 						<ul class="grid-unordered-list">
 							<li class="list">
-								<input class="input radio none grid-radio grid-block-input" id="grid_adaptive" name="Сетка" type="radio" value="Адаптивная"> 
+								<input class="input radio none grid-radio grid-block-input" id="grid_adaptive" checked name="Сетка" type="radio" value="Адаптивная"> 
 								<label class="label radio grid-label" for="grid_adaptive">Адаптивная</label>
 							</li>
 
@@ -85,7 +85,7 @@
 						<legend class="grid-title">Особенности:</legend>
 						<ul class="grid-unordered-list">
 							<li class="list">
-								<input class="input grid-checkbox" id="features_slid" name="Особенности" type="checkbox" value="Слайдер">
+								<input class="input grid-checkbox" id="features_slid" name="Особенности" type="checkbox" checked value="Слайдер">
 								<label class="label features-label" for="features_slid">Слайдер</label>
 							</li>
 
@@ -95,7 +95,7 @@
 							</li>
 
 							<li class="list">
-								<input class="input grid-checkbox" id="features_new" name="Особенности" type="checkbox" value="Новости">
+								<input class="input grid-checkbox" id="features_new" name="Особенности" type="checkbox" checked value="Новости">
 								<label class="label features-label" for="features_new">Новости</label>
 							</li>
 
@@ -110,7 +110,7 @@
 							</li>
 						</ul>
 					</fieldset>
-					<button type="submit" class="button button-grey grid-button-grey">Отправить</button>
+					<button type="submit" class="button button-grey grid-button-grey">Показать</button>
 				</form>
 			</aside>
 			<div>
@@ -241,8 +241,10 @@
 					<p class="paragraph feedback-address-suptitle">
 						191186, Санкт-Петербург, 
 						ул. Б. Конюшенная, д. 19/8
-						<br><br>
-						<a href="tel:+7(812)275-75-75" class="addres-tel-link"> тел. +7 (812) 275-75-75</a></p>
+					</p>
+					<p class="paragraph feedback-address-suptitle">
+						<a href="tel:+7(812)275-75-75" class="addres-tel-link"> тел. +7 (812) 275-75-75</a>
+					</p>
 					<a class="button link button-red addres-button" href="#">Напишите нам</a>
 				</div>
 			</div>
@@ -282,7 +284,7 @@
 		</div>
 		<div class="feedback-form-email">
 			<label class="label" for="email"><b>Ваш e-mail:</b></label>
-			<input class="input"  id="email" type="text" placeholder="email@example.com" name="e-mail" required>
+			<input class="input" id="email" type="text" placeholder="email@example.com" name="e-mail" required>
 		</div>
 		<div class="feedback-form-text">
 			<label class="label" for="text_mail"><b>Текст вашего письма:</b></label>
