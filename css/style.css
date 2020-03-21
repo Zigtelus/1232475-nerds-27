@@ -468,7 +468,7 @@ body {
 
 .partners {
 	align-items: center;
-	margin:48px 0 38px 0;
+	margin:48px 0 38px 18px;
 	position: relative;
 	flex-wrap: wrap;
 
@@ -477,10 +477,10 @@ body {
 .partners-list {
 	width: 222px;
 	text-align-last: center;
-	/*margin-right: 37px;*/
+	margin-right: 37px;
 }
 
-.partners-list-border::after {
+/*.partners-list-border::after {
 	content: "";
 	background: #efefef;
 	width: 2px;
@@ -488,6 +488,36 @@ body {
 	top: 14px;
 	position: absolute;
 	margin-left: 49px;
+}*/
+
+.partners-list-border-htmlacdemy::after {
+	content: "";
+	background: #efefef;
+	width: 2px;
+	height: 52px;
+	top: 14px;
+	position: absolute;
+	margin-left: 49px;
+}
+
+.partners-list-border-borodinsli::after {
+	content: "";
+	background: #efefef;
+	width: 2px;
+	height: 52px;
+	top: 14px;
+	position: absolute;
+	margin-left: 45px;
+}
+
+.partners-list-border-pink::after {
+	content: "";
+	background: #efefef;
+	width: 2px;
+	height: 52px;
+	top: 14px;
+	position: absolute;
+	margin-left: 58px;
 }
 
 .partners-list img {
@@ -827,11 +857,23 @@ iframe {
 }
 
 .price-suptitle {
-	width: 227px;
 	margin: 0 auto;
 	line-height: 1.13;
 	color: #666666;
 }
+
+.price-suptitle-pink,
+.price-suptitle-kvas,
+.price-suptitle-plus {
+	width: 227px;
+}
+
+.price-suptitle-mishka,
+.price-suptitle-barbershop,
+.price-suptitle-sedona {
+	width: 190px;
+}
+
 
 .button-price {
 	width: 200px;
@@ -1014,12 +1056,11 @@ iframe {
 /*форма обратной связи*/
 
 .feedback-form {
+	width: 758px;
 	position: fixed;
-	width: 761px;
-	height: 434px;
 	background: #fff;
 	flex-wrap: wrap;
-	padding: 74px 100px 86px 101px;
+	padding: 42px 97px 54px 100px;
 	display: flex;
 	justify-content: space-between;
 	box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
@@ -1030,21 +1071,21 @@ iframe {
 }
 
 .feedback-form-text {
-	margin-top: 36px;
+	margin-top: 34px;
 }
 
 .feedback-form-text textarea {
 	border: 1px solid #d7dcde;
-	width: 744px;
-	height: 118px;
-	margin-top: 12px;
-	padding: 14px 0 0 16px;	
+	width: 741px;
+	padding: 12px 0px 0px 15px;
+	margin: 10px 0 0 0;
 	resize: none;
 }
 
 .feedback-title {
-	width: 50%;
-	height: 65px;
+	width: 100%;
+	font-size: 44px;
+	margin: 22px 0px 42px 0px;
 }
 
 .feedback-close-button {
@@ -1055,6 +1096,9 @@ iframe {
 	height: 21px;
 	opacity: 0.2;
 	cursor: pointer;
+	position: absolute;
+	top: 76px;
+	right: 87px;
 }
 
 .feedback-close-button:hover {
@@ -1068,16 +1112,14 @@ iframe {
 .feedback-form-name,
 .feedback-form-email {
 	width: 360px;
-	height: 82px;
 }
 
 .feedback-form-name input,
 .feedback-form-email input {
-	width: 344px;
+	width: 342px;
 	border: 1px solid #d7dcde;
-	height: 50px;
-	margin-top: 12px;
-	padding-left: 16px;
+	padding: 17px 0px 14px 15px;
+	margin-top: 7px;
 }
 
 .feedback-form-name input:hover,
@@ -1093,7 +1135,7 @@ iframe {
 }
 
 .feedback-button {
-	margin-top: 47px;
+	margin: 41px 0 36px 0;
 }
 
 .send {
