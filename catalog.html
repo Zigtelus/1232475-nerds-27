@@ -3,13 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 
+	<title>Document</title>
+
 	<!-- ссылка на шрифт -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap&subset=cyrillic" rel="stylesheet">
 
-	<title>Document</title>
-
 	<!-- ссылка на подключение CSS файла -->
-	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/normalize.min.css">
 
 	<!-- ссылка на подключение CSS файла -->
 	<link rel="stylesheet" href="css/style.css">
@@ -65,18 +65,18 @@
 						<legend class="grid-title">Сетка:</legend>
 						<ul class="grid-unordered-list">
 							<li class="list">
-								<input class="input radio none grid-radio grid-block-input" id="grid_adaptive" checked name="Сетка" type="radio" value="Адаптивная"> 
-								<label class="label radio grid-label" for="grid_adaptive">Адаптивная</label>
+								<input class="input radio none grid-radio grid-radio-block grid-block-input" id="grid_adaptive" checked name="Сетка" type="radio" value="Адаптивная" disabled> 
+								<label class="label radio grid-label grid-label-block" for="grid_adaptive" tabindex="1">Адаптивная</label>
 							</li>
 
 							<li class="list">
 								<input class="input radio none grid-radio grid-block-input" id="grid_fix" name="Сетка" type="radio" value="Фиксированная">
-								<label class="label radio grid-label" for="grid_fix">Фиксированная</label>
+								<label class="label radio grid-label" for="grid_fix" tabindex="2">Фиксированная</label>
 							</li>
 
 							<li class="list">
 								<input class="input radio none grid-radio grid-block-input" id="grid_rubber" name="Сетка" type="radio" value="Резиновая"> 
-								<label class="label radio grid-label" for="grid_rubber">Резиновая</label>
+								<label class="label radio grid-label" for="grid_rubber" tabindex="3">Резиновая</label>
 							</li>
 						</ul>
 					</fieldset>
@@ -85,7 +85,7 @@
 						<legend class="grid-title">Особенности:</legend>
 						<ul class="grid-unordered-list">
 							<li class="list">
-								<input class="input grid-checkbox" id="features_slid" name="Особенности" type="checkbox" checked value="Слайдер">
+								<input class="input grid-checkbox grid-checkbox-block" id="features_slid" name="Особенности" type="checkbox" disabled checked value="Слайдер">
 								<label class="label features-label" for="features_slid">Слайдер</label>
 							</li>
 
@@ -95,7 +95,7 @@
 							</li>
 
 							<li class="list">
-								<input class="input grid-checkbox" id="features_new" name="Особенности" type="checkbox" checked value="Новости">
+								<input class="input grid-checkbox grid-checkbox-block" id="features_new" name="Особенности" type="checkbox" disabled checked value="Новости">
 								<label class="label features-label" for="features_new">Новости</label>
 							</li>
 
@@ -123,8 +123,8 @@
 							<a class="sort-link" href="#">по названию</a>
 						</div>
 						<div class="sort-arrow">
-							<img class="sort-arrow-down sort-arrow-active" src="img/icons/icon-down-dir.png" alt="">
-							<img class="sort-arrow-up" src="img/icons/icon-down-dir.png" alt="">
+							<a href="#"><img class="sort-arrow-down sort-arrow-active" src="img/icons/icon-down-dir.png" alt=""></a>
+							<a href="#"><img class="sort-arrow-up" src="img/icons/icon-down-dir.png" alt=""></a>
 						</div>
 					</div>
 				</div>
@@ -139,7 +139,7 @@
 						</div>
 						<div class="pattern-img">
 							<img class="pattern-img-head" src="img/catalog/browser.png" alt="Информационный сайт для туристов">
-							<img class="pattern-img-body" src="img/catalog/1.jpg" alt="Шаблон сайта Sedona">
+							<img class="pattern-img-body" src="img/catalog/sedona.jpg" alt="Шаблон сайта Sedona">
 						</div>
 					</li>
 
@@ -153,7 +153,7 @@
 						</div>
 						<div class="pattern-img">
 							<img class="pattern-img-head" src="img/catalog/browser.png" alt="Продуктовый лендинг приложения для iOS и Android">
-							<img class="pattern-img-body" src="img/catalog/2.jpg" alt="Шаблон лендинга Pink app">
+							<img class="pattern-img-body" src="img/catalog/pink.jpg" alt="Шаблон лендинга Pink app">
 						</div>
 					</li>
 
@@ -168,7 +168,7 @@
 						</div>
 						<div class="pattern-img">
 							<img class="pattern-img-head" src="img/catalog/browser.png" alt="Сайт салона красоты">
-							<img class="pattern-img-body" src="img/catalog/3.jpg" alt="Шаблон сайта салона красоты Barbershop">
+							<img class="pattern-img-body" src="img/catalog/barbershop.jpg" alt="Шаблон сайта салона красоты Barbershop">
 						</div>
 					</li>
 					<li class="list products-pattern-right">
@@ -182,7 +182,7 @@
 						</div>
 						<div class="pattern-img">
 							<img class="pattern-img-head" src="img/catalog/browser.png" alt="интернет-магазина игрушек">
-							<img class="pattern-img-body" src="img/catalog/4.jpg" alt="Шаблон интернет-магазина игрушек Mishka">
+							<img class="pattern-img-body" src="img/catalog/mishka.jpg" alt="Шаблон интернет-магазина игрушек Mishka">
 						</div>
 					</li>
 					<li class="list products-pattern">
@@ -196,7 +196,7 @@
 						</div>
 						<div class="pattern-img">
 							<img class="pattern-img-head" src="img/catalog/browser.png" alt="Лендинг курсов повышения квалификации">
-							<img class="pattern-img-body" src="img/catalog/5.jpg" alt="Шаблон лендинга курсов повышения квалификации A Plus">
+							<img class="pattern-img-body" src="img/catalog/plus.jpg" alt="Шаблон лендинга курсов повышения квалификации A Plus">
 						</div>
 					</li>
 					<li class="list products-pattern-right">
@@ -204,13 +204,13 @@
 							<a class="price-title" href="#">
 								<h3 class="text-title">Кваст</h3>
 							</a>
-								<p class="paragraph price-suptitle price-suptitle-kvas">Промо-сайт производителя
-									крафтового кваса</p>
-								<button class="button button-red button-price">9 900 руб.</button>
+							<p class="paragraph price-suptitle price-suptitle-kvas">Промо-сайт производителя
+								крафтового кваса</p>
+							<button class="button button-red button-price">9 900 руб.</button>
 						</div>
 						<div class="pattern-img">
 							<img class="pattern-img-head" src="img/catalog/browser.png" alt="Промо-сайт производителя кваса">
-							<img class="pattern-img-body" src="img/catalog/6.jpg" alt="Шаблон промо-сайта производителя крафтового кваса Кваст">
+							<img class="pattern-img-body" src="img/catalog/kvas.jpg" alt="Шаблон промо-сайта производителя крафтового кваса Кваст">
 						</div>
 					</li>
 				</ul>
@@ -259,12 +259,12 @@
 					</li>
 					<li class="list">
 						<a class="social-icons-anchor" href="#">
-							<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#FFF" d="M18 0H3C1.35 0 0 1.35 0 3v15c0 1.65 1.35 3 3 3h15c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5S12.43 14 10.5 14 7 12.43 7 10.5 8.57 7 10.5 7zM18 18H3V9h1.181A6.504 6.504 0 0 0 4 10.5a6.5 6.5 0 1 0 13 0 6.45 6.45 0 0 0-.181-1.5H18v9zm0-11h-4V3h4v4z"/></svg>
+							<svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22"><path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/></svg>
 						</a>
 					</li>
 					<li class="list">
 						<a class="social-icons-anchor" href="#">
-							<svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22"><path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/></svg>
+							<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#FFF" d="M18 0H3C1.35 0 0 1.35 0 3v15c0 1.65 1.35 3 3 3h15c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5S12.43 14 10.5 14 7 12.43 7 10.5 8.57 7 10.5 7zM18 18H3V9h1.181A6.504 6.504 0 0 0 4 10.5a6.5 6.5 0 1 0 13 0 6.45 6.45 0 0 0-.181-1.5H18v9zm0-11h-4V3h4v4z"/></svg>
 						</a>
 					</li>
 				</ul>
@@ -293,6 +293,6 @@
 		<button type="submit" class="button send button-red feedback-button">Отправить</button>
 	</form>
 	<!-- ссылка на подключение js файла -->
-		<script src="script.js"></script>
+		<script src="script.min.js"></script>
 </body>
 </html>
