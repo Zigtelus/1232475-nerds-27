@@ -1125,7 +1125,7 @@ body {
 .feedback-form-text textarea {
 	border: 1px solid #d7dcde;
 	width: 741px;
-	padding: 12px 0px 0px 15px;
+	padding: 11px 0px 15px 15px;
 	margin: 10px 0 0 0;
 	resize: none;
 }
@@ -1133,7 +1133,7 @@ body {
 .feedback-title {
 	width: 100%;
 	font-size: 44px;
-	margin: 22px 0px 42px 0px;
+	margin: 23px 0px 38px 0px;
 }
 
 .feedback-close-button {
