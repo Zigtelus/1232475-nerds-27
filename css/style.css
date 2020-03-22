@@ -505,7 +505,7 @@ body {
 .partners-list {
 	width: 222px;
 	text-align-last: center;
-	margin-right: 37px;
+	margin-right: 20px;
 }
 
 .partners-list-border-htmlacdemy::after {
@@ -862,7 +862,7 @@ body {
 	width: 760px;
 	display: flex;
 	flex-wrap: wrap;
-	margin-bottom: 45px;
+	margin-bottom: 36px;
 }
 
 .products-pattern,
