@@ -64,15 +64,6 @@ body {
 	cursor: pointer;
 }
 
-.sort button:hover {
-	opacity: 0.6;
-}
-
-.sort button:active {
-	opacity: 1;
-}
-
-
 /*header*/
 
 .header {
@@ -155,7 +146,6 @@ body {
 	cursor: pointer;
 	text-decoration: none;
 	border: 0 none;
-	opacity: 0.90;
 	outline-color: #000;
 	border-radius: 3px;
 }
@@ -214,6 +204,14 @@ body {
 	background: #fb565a;
 	padding: 15px 39px;
 	text-align: center;
+}
+
+.button-red:hover {
+	background: #e74246;
+}
+
+.button-red:active {
+	background: #d7373b;
 }
 
 .button-green {
@@ -301,7 +299,6 @@ body {
 }
 
 .slide-button {
-	background: #fb565a;
 	padding: 16px 0;
 	margin-top: 40px;
 	display: inline-block;
@@ -915,21 +912,26 @@ body {
 .price-suptitle-pink,
 .price-suptitle-kvas,
 .price-suptitle-plus {
-	width: 227px;
+	width: 254px;
 	overflow: auto;
+	height: 36px;
 }
 
 .price-suptitle-mishka,
 .price-suptitle-barbershop,
 .price-suptitle-sedona {
-	width: 190px;
+	width: 196px;
 	overflow: auto;
+	height: 36px;
 }
-
 
 .button-price {
 	width: 200px;
 	margin-top: 30px;
+}
+
+.button-price:active {
+	color: #fff;
 }
 
 .products-pattern:hover .pattern-price {
@@ -1013,12 +1015,6 @@ body {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 2px;
-}
-
-.sort button {
-	opacity: 0.3;
-	background: none;
-	border: none;
 }
 
 .sort-arrow {
@@ -1108,7 +1104,7 @@ body {
 /*форма обратной связи*/
 
 .feedback-form {
-	width: 758px;
+	width: 762px;
 	position: fixed;
 	background: #fff;
 	flex-wrap: wrap;
@@ -1187,8 +1183,8 @@ body {
 }
 
 .feedback-button {
-	margin: 41px 0 36px 0;
-	padding: 16px 85px 16px 85px;
+	margin: 44px 0 29px 0;
+	padding: 18px 85px 11px 82px;
 }
 
 .none {
