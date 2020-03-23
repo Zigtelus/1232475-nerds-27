@@ -4,11 +4,14 @@
 				let close = document.querySelector(".close");
 
 				if (link) {
+
+      
 					link.addEventListener("click", function (evt) {
 						evt.preventDefault();
 						console.log("должен подгрузиться попам");
-						console.log(popup)
+						console.log(popup);
 						popup.classList.remove("none");
+						
 				});}
 
 				if (close) {

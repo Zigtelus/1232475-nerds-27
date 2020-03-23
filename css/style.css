@@ -112,7 +112,7 @@ body {
 
 .nav {
 	font-weight: 500;
-	margin: 29px 0px 0px 33px;
+	margin: 27px 0px 0px 35px;
 }
 
 
@@ -187,7 +187,7 @@ body {
 }
 
 .price-title h3{
-	margin: 0px 4px 25px 0;
+	margin: 0px 4px 16px 0;
 	font-size: 18px;
 	display: inline-block;
 	vertical-align: top;
@@ -206,7 +206,7 @@ body {
 
 .button-red {
 	background: #fb565a;
-	padding: 15px 39px;
+	padding: 16px 40px;
 	text-align: center;
 }
 
@@ -220,13 +220,13 @@ body {
 
 .button-green {
 	background: #00ca74;
-	padding: 16px 39px;
+	padding: 16px 40px;
 	margin-top: 35px;
 }
 
 .button-yellow {
 	background: #efc84a;
-	padding: 16px 39px;
+	padding: 16px 40px;
 	margin-top: 35px;
 }
 
@@ -245,16 +245,16 @@ body {
 }
 
 .slide-one .paragraph {
-	width: 333px;
+	width: 365px;
 }
 
 .slide-two .paragraph {
-	width: 350px;
+	width: 410px;
 }
 
 
 .slide-three .paragraph {
-	width: 344px;
+	width: 365px;
 }
 
 .slide-one:nth-of-type(1) {
@@ -305,7 +305,7 @@ body {
 
 .slide-button {
 	padding: 16px 0;
-	margin-top: 40px;
+	margin-top: 39px;
 	display: inline-block;
 	vertical-align: top;
 	width: 240px;
@@ -387,19 +387,20 @@ body {
 .advantages-site-content,
 .advantages-application-content,
 .advantages-presentation-content {
-	margin-top: 167px;
+	margin-top: 171px;
 	width: 300px;
 }
 
 .advantages-title {
 	text-transform: uppercase;
-	margin: 0px 0px 13px 0;
+	margin: 0px 0px 16px 0;
 	font-size: 24px;
 	line-height: 30px;
 }
 
 .advantages-suptitle {
 	width: 245px;
+	line-height: 24px;
 }
 
 .button-advantages {
@@ -418,7 +419,7 @@ body {
 /*3 блок*/
 
 .about {
-	padding: 39px 0 60px 0;
+	padding: 39px 0 57px 0;
 }
 
 .about-information {
@@ -466,7 +467,7 @@ body {
 }
 
 .about-statistics-img {
-	margin: 0 0 40px 0;
+	margin: 0 0 57px 0;
 }
 
 .about-statistics-suptitle {
@@ -489,7 +490,7 @@ body {
 }
 
 .statistics-percent p {
-	margin: 17px 0px 0;
+	margin: 22px 0px 0;
 }
 
 .statistics-percent-numbers {
@@ -505,7 +506,7 @@ body {
 
 .partners {
 	align-items: center;
-	margin:48px 0 38px 18px;
+	margin: 44px 0 40px 18px;
 	position: relative;
 	flex-wrap: wrap;
 
@@ -517,14 +518,22 @@ body {
 	margin-right: 20px;
 }
 
+.partners-list-border-htmlacdemy {
+	margin: 14px 0px 0 2px;
+}
+
 .partners-list-border-htmlacdemy::after {
 	content: "";
 	background: #efefef;
 	width: 2px;
 	height: 52px;
-	top: 14px;
+	top: 20px;
 	position: absolute;
 	margin-left: 49px;
+}
+
+.partners-list-border-borodinsli {
+	margin: 2px 0 0 1px;
 }
 
 .partners-list-border-borodinsli::after {
@@ -532,9 +541,13 @@ body {
 	background: #efefef;
 	width: 2px;
 	height: 52px;
-	top: 14px;
+	top: 20px;
 	position: absolute;
-	margin-left: 45px;
+	margin-left: 43px;
+}
+
+.partners-list-border-pink {
+	margin-right: 0px;
 }
 
 .partners-list-border-pink::after {
@@ -542,9 +555,13 @@ body {
 	background: #efefef;
 	width: 2px;
 	height: 52px;
-	top: 14px;
+	top: 20px;
 	position: absolute;
-	margin-left: 58px;
+	margin-left: 56px;
+}
+
+.border-mishka {
+	margin: 7px 18px 0 0px;
 }
 
 .partners-list img {
@@ -553,10 +570,6 @@ body {
 
 .partners-list img:hover {
 	opacity: 1;
-}
-
- img:active {
-	opacity: .1;
 }
 
 .partners-link {
@@ -595,14 +608,14 @@ body {
 
 .feedback-address-title {
 	font-size: 18px;
-	margin: 0 0 25px 0;
+	margin: -4px 0 23px 0;
 	line-height: 30px;
 }
 
 .feedback-address-suptitle {
 	color: #666666;
 	width: 207px;
-	margin-bottom: 16px;
+	margin-bottom: 18px;
 	margin-left: 2px;
 	line-height: 18px;
 }
@@ -625,7 +638,7 @@ body {
 
 .header-title{
 	text-align: center;
-	padding: 69px 0 104px 0;
+	padding: 74px 0 107px 0;
 	font-size: 55px;
 	font-weight: 500;
 	line-height: 55px;
@@ -698,12 +711,12 @@ body {
 }
 
 .cost-title {
-	margin-bottom: 53px;
+	margin-bottom: 48px;
 	line-height: 30px;
 }
 
 .block-cost {
-	margin: 60px 0 46px;
+	margin: 56px 0 46px;
 	border: none;
 	padding: 0;
 }
@@ -721,11 +734,11 @@ body {
 }
 
 .block-cost-mam p {
-	margin: 12px 0;
+	margin: 11px 0 12px 0;
 }
 
 .block-cost-mam label {
-	margin-right: 10px;
+	margin-right: 8px;
 	line-height: 22px;
 }
 
@@ -733,7 +746,7 @@ body {
 	width: 80px;
 	height: 38px;
 	border: none;
-	background: #eeee;
+	background: #eeeeee;
 	text-align: center;
 	line-height: 22px;
 }
@@ -879,7 +892,7 @@ body {
 	width: 760px;
 	display: flex;
 	flex-wrap: wrap;
-	margin-bottom: 36px;
+	margin-bottom: 43px;
 }
 
 .products-pattern,
@@ -887,7 +900,7 @@ body {
 	width: 360px;
 	height: 616px;
 	position: relative;
-	margin-bottom: 33px;
+	margin-bottom: 31px;
 }
 
 
@@ -916,7 +929,7 @@ body {
 	display: none;
 	position: absolute;
 	bottom: 0;
-	padding: 35px 0px 41px 0px;
+	padding: 26px 0px 41px 0px;
 	background: #eeeeee;
 	opacity: .12;
 	width: 100%;
@@ -934,7 +947,7 @@ body {
 .price-suptitle-plus {
 	width: 254px;
 	overflow: auto;
-	height: 36px;
+	height: 38px;
 }
 
 .price-suptitle-mishka,
@@ -948,6 +961,7 @@ body {
 .button-price {
 	width: 200px;
 	margin-top: 30px;
+	margin-bottom: 2px;
 }
 
 .button-price:active {
@@ -1025,7 +1039,7 @@ body {
 
 .sort {
 	width: 100%;
-	margin: 59px 0 55px 0;
+	margin: 57px 0 55px 0;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -1081,7 +1095,7 @@ body {
 }
 
 .footer-text {
-	margin: 4px 219px 0px 0;
+	margin: 7px 218px 0px 0;
 	padding: 0;
 }
 
@@ -1096,7 +1110,7 @@ body {
 
 .footer-title {
 	font-size: 36px;
-	margin-bottom: 5px;
+	margin-bottom: 11px;
 	line-height: 36px;
 }
 
@@ -1142,7 +1156,7 @@ body {
 	position: fixed;
 	background: #fff;
 	flex-wrap: wrap;
-	padding: 42px 97px 54px 100px;
+	padding: 44px 98px 54px 99px;
 	display: flex;
 	justify-content: space-between;
 	box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
@@ -1153,7 +1167,7 @@ body {
 }
 
 .feedback-form-text {
-	margin-top: 34px;
+	margin-top: 33px;
 }
 
 .feedback-form-text textarea {
@@ -1168,7 +1182,7 @@ body {
 	width: 100%;
 	font-size: 45px;
 	font-weight: 500;
-	margin: 23px 0 38px;
+	margin: 25px 0 41px;
 	line-height: 45px;
 }
 
@@ -1228,8 +1242,8 @@ body {
 }
 
 .feedback-button {
-	margin: 44px 0 29px 0;
-	padding: 18px 85px 11px 82px;
+	margin: 39px 0 29px 0;
+	padding: 20px 85px 12px 83px;
 }
 
 .none {
