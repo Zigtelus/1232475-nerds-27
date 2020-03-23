@@ -112,13 +112,16 @@ body {
 
 .nav {
 	font-weight: 500;
-	margin: 33px 0 0px 33px;
+	margin: 29px 0px 0px 33px;
 }
 
 
 .nav a {
 	margin-right: 46.3px;
 	outline-color: #000;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 30px;
 }
 
 .nav-link-open {
@@ -255,7 +258,7 @@ body {
 
 .slide-one:nth-of-type(1) {
 	content: "";
-	background-image: url(../img/sliders/phone.png);
+	background-image: url("../img/sliders/phone.png");
 	background-repeat: no-repeat;
 	background-position: 432px 14px;
 	padding: 75px 0 79px 0px;
@@ -263,7 +266,7 @@ body {
 
 .slide-two:nth-of-type(2) {
 	content: "";
-	background-image: url(../img/sliders/pc.png);
+	background-image: url("../img/sliders/pc.png");
 	background-repeat: no-repeat;
 	background-position: 496px -3px;
 	padding: 75px 0 79px 0px;
@@ -271,7 +274,7 @@ body {
 
 .slide-three:nth-of-type(3) {
 	content: "";
-	background-image: url(../img/sliders/tablet.png);
+	background-image: url("../img/sliders/tablet.png");
 	background-repeat: no-repeat;
 	background-position: 400px 17px;
 	padding: 75px 0 79px 0px;
@@ -296,6 +299,7 @@ body {
 .slide-text-suptitle {
 	display: inline-block;
 	vertical-align: top;
+	line-height: 24px;
 }
 
 .slide-button {
@@ -368,28 +372,29 @@ body {
 }
 
 .advantages-site::before {
-	background-image: url(../img/advantages/websites.jpg);
+	background-image: url("../img/advantages/websites.jpg");
 }
 
 .advantages-application::before {
-	background-image: url(../img/advantages/application.jpg);
+	background-image: url("../img/advantages/application.jpg");
 }
 
 .advantages-presentation::before {
-	background-image: url(../img/advantages/presentations.jpg);
+	background-image: url("../img/advantages/presentations.jpg");
 }
 
 .advantages-site-content,
 .advantages-application-content,
 .advantages-presentation-content {
-	margin-top: 172px;
+	margin-top: 167px;
 	width: 300px;
 }
 
 .advantages-title {
 	text-transform: uppercase;
-	margin: 0px 0px 17px 0;
+	margin: 0px 0px 13px 0;
 	font-size: 24px;
+	line-height: 30px;
 }
 
 .advantages-suptitle {
@@ -430,14 +435,18 @@ body {
 }
 
 .about-information-suptitle {
-	margin-bottom: 42px;
+	margin-bottom: 40px;
+}
+
+.about-wedo-title {
+	line-height: 24px;
 }
 
 .about-information-list {
 	position: relative;
-	line-height: 21px;
-	margin-top: 27px;
+	margin-top: 24px;
 	margin-left: -3px;
+	line-height: 24px;
 }
 
 .about-information-list::before {
@@ -465,11 +474,13 @@ body {
 	font-weight: bold;
 	text-align: center;
 	margin: 34px -2px 0 0;
+	line-height: 24px;
 }
 
 .statistics-percent b {
 	font-size: 45px;
 	font-family: "Roboto", "Arial", sans-serif;
+	line-height: 10px;
 }
 
 .statistics-percent sup {
@@ -559,7 +570,7 @@ body {
 }
 
 .footer-feedback {
-	background-image: url(../img/where/map.png);
+	background-image: url("../img/where/map.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	margin: 0 0 0 0;
@@ -584,6 +595,7 @@ body {
 .feedback-address-title {
 	font-size: 18px;
 	margin: 0 0 25px 0;
+	line-height: 30px;
 }
 
 .feedback-address-suptitle {
@@ -591,7 +603,7 @@ body {
 	width: 207px;
 	margin-bottom: 16px;
 	margin-left: 2px;
-	line-height: 1.3;
+	line-height: 18px;
 }
 
 .feedback-address-suptitle a {
@@ -614,6 +626,8 @@ body {
 	text-align: center;
 	padding: 69px 0 104px 0;
 	font-size: 55px;
+	font-weight: 500;
+	line-height: 55px;
 }
 
 .aside {
@@ -641,6 +655,7 @@ body {
 	font-size: 14px;
 	opacity: .3;
 	outline-color: #000;
+	line-height: 18px;
 }
 
 .sort-link:hover {
@@ -683,6 +698,7 @@ body {
 
 .cost-title {
 	margin-bottom: 53px;
+	line-height: 30px;
 }
 
 .block-cost {
@@ -717,6 +733,7 @@ body {
 	border: none;
 	background: #eeee;
 	text-align: center;
+	line-height: 22px;
 }
 
 .grid-block {
@@ -788,6 +805,7 @@ body {
 .grid-label {
 	position: relative;
 	left: 6px;
+	line-height: 22px;
 }
 
 .grid-label-block::before {
@@ -1011,6 +1029,10 @@ body {
 	align-items: center;
 }
 
+.sort .grid-title {
+	line-height: 18px;
+}
+
 .sort div {
 	display: flex;
 	justify-content: space-between;
@@ -1068,6 +1090,11 @@ body {
 .footer-title {
 	font-size: 36px;
 	margin-bottom: 5px;
+	line-height: 36px;
+}
+
+.footer-suptitle {
+	line-height: 22px;
 }
 
 .social-icons-anchor {
@@ -1132,8 +1159,10 @@ body {
 
 .feedback-title {
 	width: 100%;
-	font-size: 44px;
-	margin: 23px 0px 38px 0px;
+	font-size: 45px;
+	font-weight: 500;
+	margin: 23px 0 38px;
+	line-height: 45px;
 }
 
 .feedback-close-button {
