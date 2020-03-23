@@ -610,6 +610,7 @@ body {
 	font-size: 18px;
 	margin: -4px 0 23px 0;
 	line-height: 30px;
+	text-transform: uppercase;
 }
 
 .feedback-address-suptitle {
@@ -674,6 +675,10 @@ body {
 
 .sort-link:hover {
 	opacity: .6;
+}
+
+.sort-link:active {
+	opacity: 1;
 }
 
 .sort-link-active {
