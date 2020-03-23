@@ -191,6 +191,7 @@ body {
 	font-size: 18px;
 	display: inline-block;
 	vertical-align: top;
+	line-height: 30px;
 }
 
 
@@ -410,7 +411,7 @@ body {
 }
 
 .button-advantages:active {
-	box-shadow: 0px -1px 0px 0 rgba(0, 1, 1, 0.75);
+	box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 
@@ -659,7 +660,7 @@ body {
 }
 
 .sort-link:hover {
-	opacity: .7;
+	opacity: .6;
 }
 
 .sort-link-active {
@@ -725,6 +726,7 @@ body {
 
 .block-cost-mam label {
 	margin-right: 10px;
+	line-height: 22px;
 }
 
 .block-cost-mam input {
@@ -805,7 +807,7 @@ body {
 .grid-label {
 	position: relative;
 	left: 6px;
-	line-height: 22px;
+	line-height: 20px;
 }
 
 .grid-label-block::before {
@@ -1051,6 +1053,11 @@ body {
 	height: 11px;
 }
 
+.sort-arrow-down:hover,
+.sort-arrow-up:hover {
+	opacity: 0.6;
+}
+
 .sort-arrow-up {
 	transform: scaley(-1);
 	margin-left: 14px;
@@ -1107,7 +1114,7 @@ body {
 	outline-color: #000;
 }
 
-.social-icons li {
+.social-icons-list {
 	width: 79px;
 	height: 79px;
 	background-color: #e1e1e1;
@@ -1115,15 +1122,15 @@ body {
 	margin-right: 12px;
 }
 
-.social-icons li:active {
+.social-icons-list:active {
 	background: #D83438;
 }
 
-.social-icons li:hover {
+.social-icons-list:hover {
 	background: #E84044;
 }
 
-.social-icons li:active svg {
+.social-icons-list:active svg {
 	opacity: 0.4;
 }
 
@@ -1150,7 +1157,7 @@ body {
 }
 
 .feedback-form-text textarea {
-	border: 1px solid #d7dcde;
+	border: 2px solid #d7dcde;
 	width: 741px;
 	padding: 11px 0px 15px 15px;
 	margin: 10px 0 0 0;
@@ -1194,7 +1201,7 @@ body {
 .feedback-form-name input,
 .feedback-form-email input {
 	width: 342px;
-	border: 1px solid #d7dcde;
+	border: 2px solid #d7dcde;
 	padding: 17px 0px 14px 15px;
 	margin-top: 7px;
 }
@@ -1202,13 +1209,22 @@ body {
 .feedback-form-name input:hover,
 .feedback-form-email input:hover,
 .feedback-form-text textarea:hover {
-	border: 1px solid #b4b9bb;
+	border: 2px solid #b4b9bb;
+	outline: none;
 }
 
 .feedback-form-name input:focus,
 .feedback-form-email input:focus,
 .feedback-form-text textarea:focus {
-	border: 1px solid #000;
+	border: 2px solid #000;
+	outline: none;
+}
+
+.feedback-form-name input:valid,
+.feedback-form-email input:valid,
+.feedback-form-text textarea:valid {
+	border: 2px solid #e74246;
+	outline: none;
 }
 
 .feedback-button {
